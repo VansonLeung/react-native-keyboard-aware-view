@@ -25,12 +25,12 @@
     "android",
     "react-component"
   ],
-  "author": "Alvaro Medina Ballester <me@alvaromb.com>",
+  "author": "Vanson Wing Leung <vanson@vanportdev.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/APSL/react-native-keyboard-aware-scroll-view/issues"
+    "url": "https://github.com/VansonLeung/react-native-keyboard-aware-view/issues"
   },
-  "homepage": "https://github.com/APSL/react-native-keyboard-aware-scroll-view#readme",
+  "homepage": "https://github.com/VansonLeung/react-native-keyboard-aware-view#readme",
   "dependencies": {
     "react-native": ">=0.13.0",
     "react-timer-mixin": "^0.13.3"

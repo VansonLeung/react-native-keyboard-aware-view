@@ -25,7 +25,7 @@
     "android",
     "react-component"
   ],
-  "author": "Alvaro Medina Ballester <me@alvaromb.com>",
+  "author": "Vanson Wing Leung <vanson@vanportdev.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/VansonLeung/react-native-keyboard-aware-view/issues"

@@ -36,7 +36,7 @@ import { KeyboardAwareView } from 'react-native-keyboard-aware-view'
 </KeyboardAwareView>
 ```
 
-```jsx
+```jsx (From one of my app's example)
   render() {
     return (
         <View style={{flex: 1}}>
@@ -81,6 +81,29 @@ import { KeyboardAwareView } from 'react-native-keyboard-aware-view'
     );
   }
 ```
+
+```jsx (A easier to read example)
+  render() {
+    return (
+        <View style={{flex: 1}}>
+          <KeyboardAwareView animated={true}>
+            <View style={{flex: 1}}>
+              <ScrollView style={{flex: 1}}>
+	              <Text style={{fontSize: 20, color: '#FFFFFF'}}>A</Text>
+	              <Text style={{fontSize: 20, color: '#FFFFFF'}}>B</Text>
+	              <Text style={{fontSize: 20, color: '#FFFFFF'}}>C</Text>
+	              <Text style={{fontSize: 20, color: '#FFFFFF'}}>D</Text>
+              </ScrollView>
+            </View>
+            <TouchableOpacity style={{height: 50, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', alignSelf: 'stretch'}}>
+              <Text style={{fontSize: 20, color: '#FFFFFF'}}>Submit</Text>
+            </TouchableOpacity>
+          </KeyboardAwareView>
+        </View>
+    );
+  }
+```
+
 
 ## License
 

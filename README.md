@@ -1,6 +1,8 @@
 # react-native-keyboard-aware-view
 A simple React Native View component that resizes composite children views inside itself when the keyboard appears. You can implement your own ScrollView, ListView, Multiple Views etc... inside the View and set your own view to 'flex: 1'. 
 
+### Note: this view only affects iOS. Although still parsable in Android environment, it is treated as an ordinary <View> with "flex: 1" bootstrapped.
+
 Tested: it only affects iOS since Android version of React Native lacks support of this callback, by v0.17:
 
     DeviceEventEmitter.addListener('keyboardWillShow', this.onKeyboardWillShow.bind(this))
@@ -24,19 +26,22 @@ it:
 import { KeyboardAwareView } from 'react-native-keyboard-aware-view'
 ```
 
-```usage (Animated)
+### Animated keyboard aware view:
+```usage
 <KeyboardAwareView animated={true}>
 	...
 </KeyboardAwareView>
 ```
 
-```usage (Not Animated)
+### Instant (non-animated) keyboard aware view:
+```usage
 <KeyboardAwareView animated={false}>
 	...
 </KeyboardAwareView>
 ```
 
-```jsx (From one of my app's example)
+### An Example snippet from one of my projects:
+```jsx
   render() {
     return (
         <View style={{flex: 1}}>
@@ -82,7 +87,9 @@ import { KeyboardAwareView } from 'react-native-keyboard-aware-view'
   }
 ```
 
-```jsx (A easier to read example)
+
+### A Easier Example:
+```jsx
   render() {
     return (
         <View style={{flex: 1}}>

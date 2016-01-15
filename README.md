@@ -3,7 +3,7 @@ A simple React Native View component that resizes composite children views insid
 
 ![Demo screen](https://dl.dropboxusercontent.com/u/11386030/out.gif)
 
-### Note: this view only affects iOS. Although still parsable in Android environment, it is treated as an ordinary <View> with "flex: 1" bootstrapped.
+### Note: this view only affects iOS. Although still parsable in Android environment, it is treated as an ordinary ``<View>`` with "flex: 1" bootstrapped.
 
 Tested: it only affects iOS since Android version of React Native lacks support of this callback, by v0.17:
 

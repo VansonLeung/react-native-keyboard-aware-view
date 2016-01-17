@@ -1,6 +1,10 @@
 # react-native-keyboard-aware-view
 A simple React Native View component that resizes composite children views inside itself when the keyboard appears. You can implement your own ScrollView, ListView, Multiple Views etc... inside the View and set your own view to 'flex: 1'. 
 
+For the screen below demonstration, the ``<TextInput>`` automatically jumping according to ``<ScrollView>`` scroll is NOT related to this library. It is related to my own implementation of ``<CTextInput>``, which is another story & beyond the scope of this plugin.
+
+The problem this plugin aims to solve is to offer easy approach to adjust the view height when keyboard shows / hides. So that you could see the view at the bottom of the screen always sticking above the keyboard. You want to implement a sticky Whatsapp-like message text input box? Set your Chat scrollview to flex: 1, and set your message box view below the scrollview, and then wrap them both inside ``<KeyboardAwareView>``. Here you go. You have implemented a sticky message box view in iOS with no effort at all!
+
 ![Demo screen](https://dl.dropboxusercontent.com/u/11386030/out.gif)
 
 ### Note: this view only affects iOS. Although still parsable in Android environment, it is treated as an ordinary ``<View>`` with "flex: 1" bootstrapped.

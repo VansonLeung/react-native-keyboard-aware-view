@@ -46,6 +46,16 @@ import { KeyboardAwareView } from 'react-native-keyboard-aware-view'
 </KeyboardAwareView>
 ```
 
+### 0.0.7 Updates - Android fix - optionally do not force dismiss keyboard when KeyboardAwareView layout changes:
+Use case: Keyword Search
+```usage
+<KeyboardAwareView doNotForceDismissKeyboardWhenLayoutChanges={true}>
+	...
+</KeyboardAwareView>
+```
+
+
+
 ### An Example snippet from one of my projects:
 ```jsx
   render() {

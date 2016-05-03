@@ -1,8 +1,8 @@
-[![npm version](https://badge.fury.io/js/react-native-keyboard-aware-view.svg)](http://badge.fury.io/js/react-native)
-[![NPM](https://nodei.co/npm/react-native-keyboard-aware-view.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-native-keyboard-aware-view/)
-
-
 # react-native-keyboard-aware-view
+
+[![npm version](https://badge.fury.io/js/react-native-keyboard-aware-view.svg)](http://badge.fury.io/js/react-native)]
+[![NPM](https://nodei.co/npm/react-native-keyboard-aware-view.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-native-keyboard-aware-view/)]
+
 A simple React Native View component that resizes composite children views inside itself when the keyboard appears. You can implement your own ScrollView, ListView, Multiple Views etc... inside the View and set your own view to 'flex: 1'. 
 
 For the screen below demonstration, the ``<TextInput>`` automatically jumping according to ``<ScrollView>`` scroll is NOT related to this library. It is related to my own implementation of ``<CTextInput>``, which is another story & beyond the scope of this plugin.

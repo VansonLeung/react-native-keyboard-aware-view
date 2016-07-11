@@ -1,4 +1,8 @@
 # react-native-keyboard-aware-view
+
+[![npm version](https://badge.fury.io/js/react-native-keyboard-aware-view.svg)](http://badge.fury.io/js/react-native)
+[![NPM](https://nodei.co/npm/react-native-keyboard-aware-view.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-native-keyboard-aware-view/)
+
 A simple React Native View component that resizes composite children views inside itself when the keyboard appears. You can implement your own ScrollView, ListView, Multiple Views etc... inside the View and set your own view to 'flex: 1'. 
 
 For the screen below demonstration, the ``<TextInput>`` automatically jumping according to ``<ScrollView>`` scroll is NOT related to this library. It is related to my own implementation of ``<CTextInput>``, which is another story & beyond the scope of this plugin.
@@ -47,9 +51,7 @@ import { KeyboardAwareView } from 'react-native-keyboard-aware-view'
 ```
 
 ### 0.0.8 Updates - Android fix - optionally do not force dismiss keyboard when KeyboardAwareView layout changes:
-Use case: 
-1. Keyword Search
-2. Hotfix for keyboard unable to stay open
+After adopting this plugin, when your Android app needs to undergo indeterminate layout changes THAT would affect the layout of ```<KeyboardAwareView>```, the keyboard would be dismissed. If you do not want the keyboard to be dismissed by this behaviour you just have to set this parameter to true:
 ```usage
 <KeyboardAwareView doNotForceDismissKeyboardWhenLayoutChanges={true}>
 	...

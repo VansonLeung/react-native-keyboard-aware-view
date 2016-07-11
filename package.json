@@ -1,6 +1,6 @@
 {
   "name": "react-native-keyboard-aware-view",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A simple React Native View component that resizes composite children views inside itself when the keyboard appears. You can implement your own ScrollView, ListView, Multiple Views etc... inside the View and set your own view to 'flex: 1'. ",
   "main": "index.js",
   "scripts": {

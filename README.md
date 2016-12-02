@@ -50,8 +50,18 @@ import { KeyboardAwareView } from 'react-native-keyboard-aware-view'
 </KeyboardAwareView>
 ```
 
-### 0.0.8 Updates - Android fix - optionally do not force dismiss keyboard when KeyboardAwareView layout changes:
-After adopting this plugin, when your Android app needs to undergo indeterminate layout changes THAT would affect the layout of ```<KeyboardAwareView>```, the keyboard would be dismissed. If you do not want the keyboard to be dismissed by this behaviour you just have to set this parameter to true:
+
+### 0.0.8 Updates - ~~Android fix - optionally do not force dismiss keyboard when KeyboardAwareView layout changes:~~
+~~After adopting this plugin, when your Android app needs to undergo indeterminate layout changes THAT would affect the layout of ```<KeyboardAwareView>```, the keyboard would be dismissed. If you do not want the keyboard to be dismissed by this behaviour you just have to set this parameter to true:
+```usage
+<KeyboardAwareView doNotForceDismissKeyboardWhenLayoutChanges={true}>
+	...
+</KeyboardAwareView>
+```
+
+### 0.0.12 Updates - Reflecting the fix of 0.0.8, Android no longer accepts "doNotForceDismissKeyboardWhenLayoutChanges" boolean. Instead, the keyboard would never be dismissed when the app layout changes in Android, such that the "doNotForceDismissKeyboardWhenLayoutChanges" parameter would always be treated as "true".
+
+However, iOS still keeps this parameter to control the keyboard:
 ```usage
 <KeyboardAwareView doNotForceDismissKeyboardWhenLayoutChanges={true}>
 	...

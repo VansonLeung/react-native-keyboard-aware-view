@@ -1,3 +1,5 @@
+#### DEPRECATED SORRY
+
 # react-native-keyboard-aware-view
 
 [![npm version](https://badge.fury.io/js/react-native-keyboard-aware-view.svg)](http://badge.fury.io/js/react-native)

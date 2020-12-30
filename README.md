@@ -1,4 +1,4 @@
-#### DEPRECATED SORRY
+# WARNING: DEPRECATED SORRY
 
 # react-native-keyboard-aware-view
 

@@ -1,5 +1,18 @@
 # WARNING: DEPRECATED SORRY
 
+# 0.60 Update:
+
+You may now add prop:
+
+useNativeDriver={true}
+
+to enable <KeyboardAwareView> to support native driver.
+	
+```
+<KeyboardAwareView useNativeDriver />
+```
+	
+
 # react-native-keyboard-aware-view
 
 [![npm version](https://badge.fury.io/js/react-native-keyboard-aware-view.svg)](http://badge.fury.io/js/react-native)

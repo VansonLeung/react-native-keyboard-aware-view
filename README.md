@@ -9,7 +9,7 @@ useNativeDriver={true}
 to enable <KeyboardAwareView> to support native driver.
 	
 ```
-<KeyboardAwareView useNativeDriver />
+<KeyboardAwareView animated useNativeDriver />
 ```
 	
 
